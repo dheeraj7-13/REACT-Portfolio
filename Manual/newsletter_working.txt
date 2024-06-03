@@ -1,0 +1,14 @@
+Based on the provided code snippets, it appears that the data inputted inside the newsletter form (`email` address) is handled on the client-side.
+
+Here's the breakdown:
+
+1. **newsletter.js**:
+   - The `Newsletter` component contains a form where users can input their email address.
+   - The `handleSubmit` function is triggered when the form is submitted. It checks if the email is not empty and contains an "@" symbol, then calls the `onValidated` function with the email data.
+   - The `onValidated` function is passed as a prop to the `Newsletter` component from its parent component (`MailchimpForm`), which is responsible for handling the submission logic.
+
+2. **mailchimp.js**:
+   - The `MailchimpForm` component renders the `MailchimpSubscribe` component, passing the necessary props including the `subscribe` function.
+   - The `subscribe` function is called with the form data (`formData`) when the form is submitted. This function is responsible for sending the email data to the Mailchimp server for subscription processing.
+
+Therefore, the data inputted inside the newsletter form is initially handled on the client-side by validating the email address and then passed to the `MailchimpForm` component, which further sends it to the server (Mailchimp) for subscription processing.

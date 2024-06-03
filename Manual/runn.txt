@@ -1,0 +1,9 @@
+@echo off
+
+cd "C:\D\blogging-site-master\blogging-site-master auth exp\"
+npm start
+
+node 'C:\d\personal-portfolio\personal-portfolio (2)-email\personal-portfolio\server1.js'
+
+cd  "C:\D\blogging-site-master\blogging-site-master auth exp\"
+npm start
